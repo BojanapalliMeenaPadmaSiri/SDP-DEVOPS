@@ -88,7 +88,7 @@ html, body {
   justify-content: center;
   align-items: center;
 
-  background: url("/src/assets/6242277345016792828.jpg") no-repeat center top;
+  background: url("/src/assets/home-bg.jpeg") no-repeat center top;
   background-size: 100% 100%; /* Stretch to always fit screen */
 
   opacity: 0.95;
