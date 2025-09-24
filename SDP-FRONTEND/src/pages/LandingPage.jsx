@@ -24,7 +24,9 @@ function LandingPage() {
             {loginOpen && (
               <div className="dropdown-menu">
                 <Link to="/login/admin">Admin</Link>
-                
+                <Link to="/login/faculty">Faculty</Link>
+                <Link to="/login/student">Student</Link>
+                <Link to="/login/parent">Parent</Link>
               </div>
             )}
           </div>
@@ -39,7 +41,9 @@ function LandingPage() {
             {signupOpen && (
               <div className="dropdown-menu">
                 <Link to="/signup/admin">Admin</Link>
-              
+                <Link to="/signup/faculty">Faculty</Link>
+                <Link to="/signup/student">Student</Link>
+                <Link to="/signup/parent">Parent</Link>
               </div>
             )}
           </div>
