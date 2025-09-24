@@ -1,0 +1,165 @@
+/* ================= Navbar ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #ffffff; /* White navbar */
+  color: #222;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3c72; /* deep blue logo text */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2563eb; /* blue hover */
+}
+
+/* ================= Dropdown ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  user-select: none;
+  color: #333;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+}
+
+/* ================= Hero / Landing Section ================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.landing-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("/src/assets/6242277345016792828.jpg") no-repeat center top;
+  background-size: 100% 100%; /* Stretch to always fit screen */
+
+  opacity: 0.95;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+
+.landing-text {
+  background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.landing-title {
+  font-size: 2.5rem;  /* Bigger title */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.9); /* Dark strong shadow */
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;  /* Bigger subtitle */
+  margin-bottom: 0;
+  color: #f1f1f1;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.9); /* Dark strong shadow */
+}
+
+
+
+.get-started-btn {
+  background: white;
+  color: #1e3c72;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.get-started-btn:hover {
+  background: #f2f2f2;
+  transform: scale(1.05);
+}
+
+.landing-wrapper {
+  position: relative;
+  z-index: 1;
+}
+/* index.css or App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1; /* pushes footer down */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* take remaining space */
+}
