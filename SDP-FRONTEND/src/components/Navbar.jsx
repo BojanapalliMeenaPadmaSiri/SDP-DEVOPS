@@ -36,7 +36,9 @@ function Navbar() {
               {loginOpen && (
                 <div className="dropdown-menu">
                   <Link to="/login/admin">Admin</Link>
-                  
+                  <Link to="/login/faculty">Faculty</Link>
+                  <Link to="/login/student">Student</Link>
+                  <Link to="/login/parent">Parent</Link>
                 </div>
               )}
             </div>
@@ -52,7 +54,9 @@ function Navbar() {
               {signupOpen && (
                 <div className="dropdown-menu">
                   <Link to="/signup/admin">Admin</Link>
-                  
+                  <Link to="/signup/faculty">Faculty</Link>
+                  <Link to="/signup/student">Student</Link>
+                  <Link to="/signup/parent">Parent</Link>
                 </div>
               )}
             </div>
@@ -70,7 +74,9 @@ function Navbar() {
           {dashOpen && (
             <div className="dropdown-menu">
               <Link to="/admin/dashboard">Admin</Link>
-             
+              <Link to="/faculty/dashboard">Faculty</Link>
+              <Link to="/student/dashboard">Student</Link>
+              <Link to="/parent/dashboard">Parent</Link>
             </div>
           )}
         </div>
